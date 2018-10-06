@@ -1,0 +1,13 @@
+<?xml version = "1.0"?>
+
+<project name="Java_Project" default="compile">
+	<property name="srcDir" value="src/"/>
+	<property name="binDir" value="bin/"/>
+	<property name="docDir" value="doc/"/>
+	<target name="compile">
+		<javac srcdir="${srcDir}" destdir="${binDir}" compiler="javac1.8"></javac>
+	</target>
+	<target name="doc" description="generate documentation">
+	    <javadoc sourcepath="${srcDir}" destdir="${docDir}"/>
+	</target>
+</project>
